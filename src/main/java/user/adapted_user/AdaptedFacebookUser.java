@@ -1,6 +1,7 @@
 package user.adapted_user;
 
 import lombok.AllArgsConstructor;
+import lombok.Setter;
 import user.facebook.FacebookUser;
 
 import java.util.Date;

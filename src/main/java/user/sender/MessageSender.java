@@ -8,8 +8,8 @@ import java.util.Objects;
 
 @Setter
 public class MessageSender {
-    private boolean VERBOSE = true;
-    public boolean send(String text, User user, String country) {
+    private static boolean VERBOSE = true;
+    public static boolean send(String text, User user, String country) {
         if (!Objects.equals(user.getCountry(), country)) {
             if (VERBOSE)
                 System.out.println("Wrong country of destination!");
