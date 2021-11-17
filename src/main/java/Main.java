@@ -1,11 +1,12 @@
-import db.Authorisation;
-import db.DataBase;
+import adapted_db.Authorization;
+import adapted_db.DataBase;
+import analitics.ReportBuilder;
 
 public class Main {
     public static void main(String[] args) {
         DataBase db = new DataBase();
-        Authorisation autorisation = new Authorisation();
-        if (autorisation.authorisation(db)) {
+        Authorization auth = new Authorization();
+        if (auth.authorize(db)) {
             ReportBuilder br = new ReportBuilder(db);
         }
     }

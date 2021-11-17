@@ -1,4 +1,6 @@
-import db.DataBase;
+package analitics;
+
+import adapted_db.DataBase;
 
 public class ReportBuilder {
     private DataBase db;
